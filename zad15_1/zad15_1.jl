@@ -10,7 +10,10 @@ println("Dokładności różnych typów zmiennoprzecinkowych:", tol)  # Wyświet
 # Wyświetlanie reprezentacji bitowej dla wybranych liczb
 println("Reprezentacja bitowa liczby zmiennoprzecinkowej Float32: -0.009765625 ", bitstring(Float32(-0.009765625)))  # Wyświetlenie reprezentacji bitowej dla liczby -0.009765625 typu Float32
 println("Reprezentacja bitowa liczby zmiennoprzecinkowej Float16: -0.009765625 ", bitstring(Float16(-0.009765625)))  # Wyświetlenie reprezentacji bitowej dla liczby -0.009765625 typu Float16
+println("Reprezentacja bitowa liczby zmiennoprzecinkowej Float64: -0.009765625 ", bitstring(Float64(-0.009765625)))  # Wyświetlenie reprezentacji bitowej dla liczby -0.009765625 typu Float64
 println("Reprezentacja bitowa liczby zmiennoprzecinkowej Float32: minus nieskończoność ", bitstring(Float32(-Inf)))  # Wyświetlenie reprezentacji bitowej dla minus nieskończoności typu Float32
+println("Reprezentacja bitowa liczby zmiennoprzecinkowej Float32: nieskończoność ",bitstring(Float32(Inf)))  # Wyświetlenie reprezentacji bitowej dla nieskończoności typu Float32
+
 
 # Obliczanie wyniku i wyświetlanie go
 result = Float16(1.) + eps(Float64)  # Obliczenie wyniku i przypisanie go do zmiennej result
